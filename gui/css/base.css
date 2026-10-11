@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root { --brown: #8b5e3c; --dark: #4a3428; --tan: #c49a6c; --glass: rgba(255,255,255,.55); --line: rgba(255,255,255,.80); }
+html, body, .stApp, button, input { font-family: 'Poppins', sans-serif !important; }
+.stApp {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(196,154,108,.50), transparent 38%),
+        radial-gradient(circle at 90% 25%, rgba(139,94,60,.28), transparent 36%),
+        radial-gradient(circle at 55% 95%, rgba(233,196,160,.60), transparent 40%),
+        linear-gradient(135deg, #fffdf9, #f6ece0);
+    background-attachment: fixed;
+}
+header[data-testid="stHeader"] { background: transparent; }
+[data-testid="stAppDeployButton"], [data-testid="stMainMenu"], [data-testid="stToolbarActions"],
+[data-testid="stDecoration"], #MainMenu, footer { display: none; }
+[data-testid="stExpandSidebarButton"] { background: var(--glass); border-radius: 12px; color: var(--dark); }
+.block-container { max-width: 1150px; padding: 1.5rem 2rem 2rem 2rem; }
+[class*="st-key-glass_"] {
+    background: var(--glass); border: 1px solid var(--line); border-radius: 24px; padding: 22px 26px;
+    backdrop-filter: blur(18px); box-shadow: 0 12px 36px rgba(120,85,55,.14);
+}
+section[data-testid="stSidebar"] { background: transparent; border: none; }
+section[data-testid="stSidebar"] > div:first-child, [data-testid="stSidebarContent"] {
+    background: linear-gradient(170deg, #a47551, #6b4a35); border-radius: 28px;
+    margin: 14px 0 14px 14px; box-shadow: 0 16px 40px rgba(90,60,40,.30);
+}
+section[data-testid="stSidebar"] * { color: #fff; }
+div[data-baseweb="input"] { border-radius: 999px; background: rgba(255,255,255,.75); border: 1px solid rgba(139,94,60,.25); }
+div[data-baseweb="base-input"] { background: transparent; border-radius: 999px; }
+div[data-baseweb="input"] input { padding: 12px 20px; }
+div[data-testid="stForm"] { border: none; padding: 0; background: transparent; }
+.stButton > button, .stFormSubmitButton > button {
+    border-radius: 999px; font-weight: 600; padding: .6rem 1.4rem; transition: all .2s ease;
+    background: rgba(255,255,255,.65); border: 1px solid rgba(139,94,60,.30); color: var(--dark);
+}
+.stButton > button:hover, .stFormSubmitButton > button:hover { transform: translateY(-2px); border-color: var(--brown); }
+.stFormSubmitButton > button { width: 100%; padding: .8rem; }
+button[kind="primary"], button[kind="primaryFormSubmit"],
+button[data-testid="stBaseButton-primary"], button[data-testid="stBaseButton-primaryFormSubmit"] {
+    background: linear-gradient(90deg, #b08968, #7f5539); border: none; color: #fff;
+}
+div[role="dialog"] { background: rgba(255,250,243,.90); backdrop-filter: blur(20px); border-radius: 26px; border: 1px solid var(--line); }
