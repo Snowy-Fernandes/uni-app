@@ -1,0 +1,24 @@
+.side-logo { width: 88px; height: 88px; margin: 10px auto 8px auto; display: grid; place-items: center; border-radius: 26px;
+    background: rgba(255,255,255,.22); border: 1px solid rgba(255,255,255,.45); box-shadow: 0 10px 24px rgba(60,35,20,.25); }
+.side-name { text-align: center; font-weight: 700; font-size: 18px; margin-bottom: 26px; }
+.side-name small { display: block; font-weight: 400; font-size: 12px; opacity: .8; }
+.side-space { height: 20vh; }
+section[data-testid="stSidebar"] .stButton > button {
+    width: 100%; justify-content: flex-start; gap: 14px; padding: 12px 18px; border: none; box-shadow: none;
+    border-radius: 14px; background: transparent; color: rgba(255,255,255,.85); font-weight: 400; text-align: left;
+}
+section[data-testid="stSidebar"] .stButton > button:hover { background: rgba(255,255,255,.14); transform: none; }
+section[data-testid="stSidebar"] .stButton > button[kind="primary"],
+section[data-testid="stSidebar"] .stButton > button[data-testid="stBaseButton-primary"] {
+    background: rgba(255,255,255,.26); color: #fff; font-weight: 700;
+}
+section[data-testid="stSidebar"] .stButton > button::before {
+    content: ""; flex: none; width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat;
+}
+:root { --icon-dashboard: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x=%223%22%20y=%223%22%20width=%227%22%20height=%229%22%20rx=%221%22/%3E%3Crect%20x=%2214%22%20y=%223%22%20width=%227%22%20height=%225%22%20rx=%221%22/%3E%3Crect%20x=%2214%22%20y=%2212%22%20width=%227%22%20height=%229%22%20rx=%221%22/%3E%3Crect%20x=%223%22%20y=%2216%22%20width=%227%22%20height=%225%22%20rx=%221%22/%3E%3C/svg%3E"); --icon-my_subjects: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d=%22M2%203h6a4%204%200%200%201%204%204v14a3%203%200%200%200-3-3H2z%22/%3E%3Cpath%20d=%22M22%203h-6a4%204%200%200%200-4%204v14a3%203%200%200%201%203-3h7z%22/%3E%3C/svg%3E"); --icon-results: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cline%20x1=%2218%22%20y1=%2220%22%20x2=%2218%22%20y2=%2210%22/%3E%3Cline%20x1=%2212%22%20y1=%2220%22%20x2=%2212%22%20y2=%224%22/%3E%3Cline%20x1=%226%22%20y1=%2220%22%20x2=%226%22%20y2=%2214%22/%3E%3C/svg%3E"); --icon-grade_guide: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Ccircle%20cx=%2212%22%20cy=%228%22%20r=%227%22/%3E%3Cpolyline%20points=%228.21%2013.89%207%2023%2012%2020%2017%2023%2015.79%2013.88%22/%3E%3C/svg%3E"); --icon-change_password: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x=%223%22%20y=%2211%22%20width=%2218%22%20height=%2211%22%20rx=%222%22/%3E%3Cpath%20d=%22M7%2011V7a5%205%200%200%201%2010%200v4%22/%3E%3C/svg%3E"); --icon-logout: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d=%22M9%2021H5a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2h4%22/%3E%3Cpolyline%20points=%2216%2017%2021%2012%2016%207%22/%3E%3Cline%20x1=%2221%22%20y1=%2212%22%20x2=%229%22%20y2=%2212%22/%3E%3C/svg%3E"); }
+.st-key-nav_dashboard button::before { background-image: var(--icon-dashboard); }
+.st-key-nav_my_subjects button::before { background-image: var(--icon-my_subjects); }
+.st-key-nav_results button::before { background-image: var(--icon-results); }
+.st-key-nav_grade_guide button::before { background-image: var(--icon-grade_guide); }
+.st-key-nav_change_password button::before { background-image: var(--icon-change_password); }
+.st-key-nav_logout button::before { background-image: var(--icon-logout); }
